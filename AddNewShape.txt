@@ -1,0 +1,18 @@
+Легкость добавления новых фигур достигается использованием интерфейса IShape. Создаем новый класс (например, Прямоугольник), котоый реализует интерфейс IShape.
+
+    public class Rectangle : IShape
+    {
+        private double width;
+        private double height;
+
+        public Rectangle(double width, double height)
+        {
+            this.width = width;
+            this.height = height;
+        }
+
+        public double GetArea()
+        {
+            return width * height;
+        }
+    }
