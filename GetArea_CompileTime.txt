@@ -1,0 +1,7 @@
+Для вычисления площади фигуры без знания типа фигуры в compile-time можно использовать полиморфизм. 
+Создаем метод, который принимает объект типа IShape и вызывает у него метод GetArea():
+
+public static double GetArea(IShape shape)
+{
+    return shape.GetArea();
+}
