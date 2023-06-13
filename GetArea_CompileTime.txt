@@ -5,3 +5,5 @@ public static double GetArea(IShape shape)
 {
     return shape.GetArea();
 }
+
+Можно передавать в этот метод любой объект, реализующий интерфейс IShape, и получать его площадь без знания типа фигуры в compile-time
